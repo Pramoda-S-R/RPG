@@ -1,0 +1,43 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "C:/Users/Pramoda/Documents/Python/Game/data/levels/test.tmx",
+    "automapping.whileDrawing": false,
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "C:/Users/Pramoda/Documents/Python/Game/data/levels/test.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 512.6666666666667,
+                "y": 292.66666666666663
+            }
+        },
+        "outdoor.tsx": {
+            "scaleInDock": 2,
+            "scaleInEditor": 1
+        }
+    },
+    "last.exportedFilePath": "C:/Users/Pramoda/Documents/Python/Game/data/levels",
+    "last.externalTilesetPath": "C:/Users/Pramoda/Documents/Python/Game/assets/tileset",
+    "map.height": 40,
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 60,
+    "openFiles": [
+        "C:/Users/Pramoda/Documents/Python/Game/data/levels/test.tmx",
+        "outdoor.tsx"
+    ],
+    "project": "outdoor.tiled-project",
+    "recentFiles": [
+        "outdoor.tsx",
+        "C:/Users/Pramoda/Documents/Python/Game/data/levels/test.tmx"
+    ],
+    "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)"
+}
