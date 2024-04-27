@@ -15,8 +15,8 @@ To get started with "i for sure need a name", you'll need to have Python and Pyg
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/monster-quest.git
-   cd monster-quest
+   git clone https://github.com/Pramoda-S-R/RPG.git
+   cd RPG
    ```
 
 2. **Install Pygame**
