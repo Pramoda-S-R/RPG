@@ -1,5 +1,6 @@
 import pygame
 import sys
+import json
 import data.scripts.utils as utils
 
 class TitleScreen:
@@ -30,6 +31,47 @@ class TitleScreen:
     def show_controls(self):
         # Display controls information
         pass
+
+
+class GameMenu:
+    def __init__(self, menu: str, is_open: bool, selected_option: int):
+        self.is_open = is_open
+        with open(menu, 'r') as f:
+            self.menu = json.load(f)
+        self.selected_option = selected_option
+
+    def scroll_down(self):
+        if self.selected_option < len(self.menu["options"]) - 1:
+            self.selected_option += 1
+        else:
+            self.selected_option = 0
+        
+    def scroll_up(self):
+        if self.selected_option > 0:
+            self.selected_option -= 1
+        else:
+            self.selected_option = len(self.menu["options"]) - 1
+
+    def render(self, screen: pygame.Surface, width: int, height: int):
+        menu_font = pygame.font.Font('assets/font/arial.ttf', 50)
+        overlay = pygame.Surface((width, height), pygame.SRCALPHA)
+        overlay.fill((0, 0, 0, 180))
+        screen.blit(overlay, (0, 0))
+
+        # Draw menu options
+        for i, option in enumerate(self.menu['options']):
+            color = (255, 215, 0) if i == self.selected_option else (255, 255, 255)
+            text_surface = menu_font.render(option['name'], True, color)
+            screen.blit(text_surface, (3, i*50))
+
+    def select_option(self):
+        option = self.menu["options"][self.selected_option]["name"]
+        if option == "Quit":
+            pygame.quit()
+            sys.exit()
+        if option == "Settings":
+            return (1440, 960)
+            
 
 if __name__ == '__main__':
     pygame.init()

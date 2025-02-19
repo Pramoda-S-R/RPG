@@ -1,0 +1,21 @@
+{
+  "title": "RPG Game Menu",
+  "options": [
+    {
+      "name": "Save Game",
+      "description": "Start a new adventure from scratch."
+    },
+    {
+      "name": "Load Game",
+      "description": "Load your previously saved progress."
+    },
+    {
+      "name": "Settings",
+      "description": "Adjust game settings like sound and graphics."
+    },
+    {
+      "name": "Quit",
+      "description": "Exit the game."
+    }
+  ]
+}

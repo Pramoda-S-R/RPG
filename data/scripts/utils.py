@@ -4,7 +4,7 @@ BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 
 def get_tile_cords(game_width, game_height, tilesize, tile):
-    posx = (tile['x'] * tilesize) - (game_width // 2 - 8)
+    posx = (tile['x'] * tilesize) - ((game_width // 2) - (tilesize // 2))
     posy = (tile['y'] * tilesize) - (game_height // 2)
     return {'x': posx, 'y': posy}
 
